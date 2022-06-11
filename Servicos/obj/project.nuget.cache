@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IbkMZ2NXoOaJw3Kn9Y4iZ/qH9sXVOM2ped/ZfrsW57pd3ILJDpV2SVCPtmqlHcneFSa+LYISbPwXfnJkJj2ZZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danie\\source\\repos\\IbgeApi\\Servicos\\Servicos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
