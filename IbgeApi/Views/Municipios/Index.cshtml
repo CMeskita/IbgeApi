@@ -4,11 +4,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>IBGE MUNICIPIOS</h1>
+<h1>Index</h1>
 
 @*<p>
     <a asp-action="Create">Create New</a>
 </p>*@
+  <div class="form-group">
+        @*    <select class="form-control" id="tipo">
+            <option selected>Escolher</option>
+                <option selected>Selecione</option>
+
+            @foreach (Municipios item in  ViewBag.UF)
+            {
+                <option value="@item.microrregiao.mesorregiao.UF.Id"> @item.Nome</option>
+            }
+
+        </select>*@
+            </div>
+
 <table class="table">
     <thead>
         <tr>
@@ -30,7 +43,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
-            @*<td>
+        @*    <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })

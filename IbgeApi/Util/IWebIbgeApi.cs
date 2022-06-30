@@ -11,5 +11,7 @@ namespace Servicos.Util
     {
         
         Task<List<Municipios>> GetMunicipios();
+        Task<List<Municipios>> GetMunicipiosUf(int id);
+        Task<List<Municipios>> GetUf();
     }
 }

@@ -31,7 +31,7 @@ namespace IbgeApi.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public Messoregiao Messoregiao { get; set; }
+        public Messoregiao mesorregiao { get; set; }
     }
     public class Municipios 
     {
@@ -39,6 +39,6 @@ namespace IbgeApi.Models
         public int Id { get; set; }
         [Display(Name = "Municipio")]
         public string Nome { get; set; }
-        public MicroRegiao MicroRegiao { get; set; }
+        public MicroRegiao microrregiao { get; set; }
     }
 }

@@ -14,31 +14,45 @@ namespace IbgeApi.Controllers
         {
             _service = service;
         }
-
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Indexp()
         {
-           var lista = await _service.GetMunicipios();
+
+           var lista =await _service.GetUf();
+
+            ViewBag.UF = lista;
 
 
+            return View();
+        }
+        public async Task<IActionResult> Index(int id=23)
+        {
+           
+            var lista = await _service.GetMunicipiosUf(id);
+            //Municipios micro = new Municipios();
 
+            //ViewBag.UF = micro;
             foreach (Municipios item in lista)
             {
                 ViewBag.Municipios = item.Nome;
+
+
             }
+
 
             return View(lista);
 
         }
-        public async Task<JsonResult> GetMicroregiaoAsync()
+        public async Task<JsonResult> GetMicroregiaoAsync(int id=23)
         {
-            var micro = await _service.GetMunicipios();
+           
+            var micro = await _service.GetMunicipiosUf(id);
 
-           // List<Municipios> micro = new List<Municipios>();
-            foreach (Municipios item in micro)
+            foreach (var item in micro)
             {
-                ViewBag.Municipios = item.MicroRegiao.Id;
+               // List<Municipios> lista = new List<Municipios>();
+                ViewBag.MunicipiosUF= item.Id;
             }
-            return Json(micro);
+            return (Json(micro));
 
         }
 
